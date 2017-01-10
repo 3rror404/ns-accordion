@@ -1,0 +1,47 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" xmlns:accordion="nativescript-accordion">
+    <!--<accordion:Accordion headerTextAlignment="center" headerTextColor="blue" allowMultiple="true" id="ac" selectedIndex="2" separatorColor="red">
+        <accordion:Accordion.items>
+            <StackLayout headerText="First">
+                <Image src="~/images/a9ff17db85f8136619feb0d5a200c0e4.png"/>
+                <Image row="1" src="~/images/f29.png"/>
+            </StackLayout>
+
+            <StackLayout headerText="Second" backgroundColor="green">
+                <Label text="Yolo"/>
+                <Button text="tap it !!!!!"/>
+            </StackLayout>
+
+            <StackLayout headerText="Third">
+                <Button text="tap it !!!!!"/>
+            </StackLayout>
+
+            <StackLayout headerText="Fourth">
+                <Image src="https://static.srcdn.com/wp-content/uploads/Superman-fighting-Goku.jpg"/>
+                <Label text="accordion"/>
+                <Button text="tap it !!!!!"/>
+            </StackLayout>
+
+        </accordion:Accordion.items>
+    </accordion:Accordion>-->
+
+    <StackLayout>
+        <StackLayout class="accordion-item test">
+            <StackLayout class="accordion-heading" tap="tapAccordionItem">
+                <Label text="Heading 1" />
+            </StackLayout>
+
+            <StackLayout class="accordion-content accordion-content-active">
+                <Label text="Lorem ipsum" />
+                <Image row="1" src="~/images/f29.png"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout class="accordion-item">
+            <StackLayout class="accordion-heading" tap="tapAccordionItem">
+                <Label text="Heading 2" />
+            </StackLayout>
+            <StackLayout class="accordion-content">
+                <Label text="Lorem ipsum" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</Page>
